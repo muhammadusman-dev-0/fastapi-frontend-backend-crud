@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Help Desk System</h1>
+        <p class="subtitle">Manage your IT support tickets</p>
+
+        <div class="form">
+            <input type="text" id="title" placeholder="Ticket title">
+            <textarea id="description" placeholder="Describe your issue"></textarea>
+
+            <select id="status">
+                <option>Open</option>
+                <option>In Progress</option>
+                <option>Resolved</option>
+            </select>
+
+            <button onclick="addTicket()">Create Ticket</button>
+        </div>
+
+        <h2>All Tickets</h2>
+        <div id="ticketList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
